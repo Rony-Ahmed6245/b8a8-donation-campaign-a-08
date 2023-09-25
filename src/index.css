@@ -48,3 +48,8 @@
     border: 1px solid gray;
   }
 
+.menus{
+  background-color: #FFE3E4;
+  padding: 20px;
+  margin-left: -12px;
+}

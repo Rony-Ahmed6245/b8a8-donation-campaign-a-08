@@ -22,10 +22,10 @@ const Donation = () => {
         <div className="max-w-7xl mx-auto my-10">
 
             {
-                noData ? <p className="h-[80vh] flex justify-center items-center text-2xl">no data found</p> :
+                noData ? <p className="h-[80vh] flex justify-center items-center text-2xl">No data found</p> :
 
                     <div className="flex justify-center items-center">
-                        <div className=" grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-4  px-4 md:px-4 lg:px-4 ">
+                        <div className=" grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-12  px-4 md:px-4 lg:px-4 ">
                             {
                                 donationData.map(card => <DonationCard key={card.id} card={card}></DonationCard>)
                             }
