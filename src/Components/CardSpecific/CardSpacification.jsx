@@ -8,7 +8,7 @@ const CardSpacification = ({ card }) => {
 
     return (
         <div className="m-10">
-            <div className=" container">
+            <div className=" container -z-10">
                 <img className="image " src={image} alt="" />
                 <div className="overlay"><button className="bg-[#FF444A] text-white font-semibold text-xl py-2 px-4 rounded-md">Donate ${price}</button></div>
             </div>
