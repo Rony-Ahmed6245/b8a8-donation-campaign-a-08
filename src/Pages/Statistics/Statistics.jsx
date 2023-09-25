@@ -1,9 +1,12 @@
 
 
+
 const Statistics = () => {
+    
+
     return (
         <div>
-            this is statistics page
+            okr
         </div>
     );
 };

@@ -5,7 +5,7 @@ const Header = () => {
     const home = <NavLink
         to="/"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-red-500 underline font-bold" : ""
+            isPending ? "pending" : isActive ? " text-red-500 underline font-bold bgTrans" : "bgTrans"
         }
     >
         Home
@@ -13,7 +13,7 @@ const Header = () => {
     const donation = <NavLink
         to="/donation"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-red-500 underline font-bold" : ""
+            isPending ? "pending" : isActive ? " text-red-500 underline font-bold " : ""
         }
     >
         Donation
@@ -21,7 +21,7 @@ const Header = () => {
     const statistics = <NavLink
         to="/statistics"
         className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? " text-red-500 underline font-bold" : ""
+            isPending ? "pending" : isActive ? " text-red-500 underline font-bold bgTrans " : ""
         }
     >
         Statistics
