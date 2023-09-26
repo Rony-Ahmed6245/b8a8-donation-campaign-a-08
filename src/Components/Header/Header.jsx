@@ -37,10 +37,10 @@ const Header = () => {
                             <label tabIndex={1} className="btn btn-ghost md:hidden">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
-                            <ul tabIndex={0} className=" menus menu-sm dropdown-content  z-[10]   rounded-box abuslate -left-10">
-                                <li className="">{home}</li>
-                                <li>{donation}</li>
-                                <li>{statistics}</li>
+                            <ul tabIndex={0} className=" menus menu-sm dropdown-content  z-[10]  rounded-box abuslate -left-10">
+                                <li className="text-4xl">{home}</li>
+                                <li className="my-4 text-4xl">{donation}</li>
+                                <li className="text-4xl">{statistics}</li>
                             </ul>
                         </div>
                     </div>

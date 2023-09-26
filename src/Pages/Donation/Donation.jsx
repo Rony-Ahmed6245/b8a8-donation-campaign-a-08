@@ -5,7 +5,7 @@ import DonationCard from "../../Components/DonationCard/DonationCard";
 const Donation = () => {
     const [donationData, setDonationData] = useState([])
     const [noData, setNoData] = useState(false)
-    const [isShow, setIsShow] = useState(false)
+    const [isShow, setIsShow] = useState(4)
 
 
     useEffect(() => {
@@ -36,24 +36,21 @@ const Donation = () => {
                         <div className="flex justify-center items-center">
                             <div className=" grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-12  px-4 md:px-4 lg:px-4 ">
                                 {
-                                    isShow ?
+                                    !isShow ?
                                         donationData.map(card => <DonationCard key={card.id} card={card}></DonationCard>)
                                         :
-                                        donationData.slice(0, 4).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
+                                        donationData.slice(0, isShow).map(card => <DonationCard key={card.id} card={card}></DonationCard>)
 
                                 }
                             </div>
 
                         </div>
                         <div className="text-center">
-                            <button onClick={() => setIsShow(!isShow)} className="">
-
-                                { !isShow ? (
-                                    <button onClick={() => setIsShow(!isShow)} className="bg-[#009444] font-semibold text-base text-white py-2 px-4 my-10 rounded-md">
-                                        see more
-                                    </button>
-                                ) : null};
-                            </button>
+                            <div className={donationData.length >= 4 ? "block" : "hidden"}>
+                                <div className={isShow === donationData.length && "hidden"}>
+                                    <button onClick={() => setIsShow(donationData.length)} className="bg-[#009444] py-2 px-4 text-white  rounded-md font-semibold my-4"> See All </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
