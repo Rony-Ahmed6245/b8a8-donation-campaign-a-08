@@ -2,10 +2,11 @@
 <div>
             <img src="https://i.ibb.co/rFGSKzZ/localhost-5173.png" alt="" />
             <h1>Add at least 3 Project features</h1>
-            <h2>1/Features: Donation Card details--- </h2>
+            <h3>1/Features: Donation Card details--- </h3>
             <img src="https://i.ibb.co/4YtF3gH/localhost-5173-donation-1.png" alt="" />
             <p>
                 A donation card is a tool or feature often used by nonprofit organizations, charities, and crowdfunding platforms to facilitate and encourage donations from individuals or organizations. Donation cards can be implemented in various ways, both online and offline, to make the donation process simple and efficient.</p>
+               <hr/> 
             <h3><span>2/Features:</span> LocalStorage Integration---</h3>
             <img src="https://i.ibb.co/w650xQM/localhost-5173-donation.png" alt="" />
             <p>
