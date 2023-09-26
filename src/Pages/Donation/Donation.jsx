@@ -20,10 +20,6 @@ const Donation = () => {
     },
         [])
 
-    // const handelSeeMore = ()=>{
-    //     console.log("click me se");
-    // }
-
 
 
     return (
@@ -53,8 +49,6 @@ const Donation = () => {
                             </div>
                         </div>
                     </div>
-
-
             }
 
         </div>

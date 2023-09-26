@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Banner = ({handelSearchText}) => {
     return (
@@ -17,6 +17,10 @@ const Banner = ({handelSearchText}) => {
             
         </div>
     );
+};
+
+Banner.propTypes = {
+    handelSearchText : PropTypes.func
 };
 
 export default Banner;

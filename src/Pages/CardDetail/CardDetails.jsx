@@ -5,14 +5,11 @@ import CardSpacification from "../../Components/CardSpecific/CardSpacification";
 
 const CardDetails = () => {
     const [card, setCard] = useState({});
-    // console.log(card);
-
-
 
     const { id } = useParams();
-    // console.log(id);
+    
     const cards = useLoaderData();
-    // console.log(cards);
+
 
     useEffect(() => {
 
@@ -20,10 +17,6 @@ const CardDetails = () => {
         setCard(findCard);
 
     }, [cards, id])
-
-    // console.log(card);
-
-
 
     return (
         <div>

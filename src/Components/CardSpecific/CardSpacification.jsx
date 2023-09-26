@@ -1,22 +1,18 @@
 import swal from "sweetalert";
-
+import PropTypes from 'prop-types';
 
 const CardSpacification = ({ card }) => {
-
-    const { id, image, title, dsc, category, cardBgColor, categoryBgColor, primaryColor, price } = card || {};
+    const { id, image, title, dsc, price } = card || {};
 
     const handelAddToDonation = () => {
         // console.log(card);
         const addedDonationArr = [];
-
-
 
         const getItem = JSON.parse(localStorage.getItem('donation'))
         if (!getItem) {
             addedDonationArr.push(card)
             localStorage.setItem('donation', JSON.stringify(addedDonationArr))
             swal("Good job!", "Successfully added !", "success");
-
         }
         else {
             const isExit = getItem.find(card => card.id === id)
@@ -30,13 +26,7 @@ const CardSpacification = ({ card }) => {
             }
 
         }
-
-
     }
-
-
-
-
 
 
 
@@ -57,6 +47,9 @@ const CardSpacification = ({ card }) => {
             </div>
         </div>
     );
+};
+CardSpacification.propTypes = {
+    card: PropTypes.object
 };
 
 export default CardSpacification;

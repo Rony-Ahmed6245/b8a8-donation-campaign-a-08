@@ -28,10 +28,10 @@ const Header = () => {
     </NavLink>;
 
     return (
-        <div className="max-w-7xl mx-auto 	">
+        <div className="max-w-7xl mx-auto ">
             <div className="px-4 md:px-4 lg:px-4 mt-4  bg-none z-30 relative ">
                 <div className="navbar flex justify-between items-center ">
-                    <img className="w-[150px]" src={'https://i.ibb.co/JHv5hjn/Logo.png'} alt="" />
+                    <img className="w-[200px]" src={'https://i.ibb.co/JHv5hjn/Logo.png'} alt="" />
                     <div className="">
                         <div className="dropdown">
                             <label tabIndex={1} className="btn btn-ghost md:hidden">
@@ -45,7 +45,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="navbar-center hidden md:flex">
-                        <ul className=" menu-horizontal px-1 gap-10">
+                        <ul className=" menu-horizontal px-1 gap-10 mr-2">
                             <li className="">{home}</li>
                             <li>{donation}</li>
                             <li>{statistics}</li>
