@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Card = ({ card }) => {
     // console.log(card);
     const { id, image, title, category, cardBgColor, categoryBgColor, primaryColor
-    } = card;
+    } = card|| {};
     const cardbg = {
         backgroundColor: cardBgColor,
     };
